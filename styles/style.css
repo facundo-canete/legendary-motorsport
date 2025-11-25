@@ -426,6 +426,7 @@ a {
     }
 }
 
+/* Responsive: desktop */
 @media (min-width: 1024px) {
     html {
         margin: 10px 10px 0;
