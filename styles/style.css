@@ -406,6 +406,10 @@ figure {
     .footer-copyright {
         font-size: 100%;
     }
+
+    .updates h3 {
+        text-align: center;
+    }
 }
 
 /* Responsive: desktop */
