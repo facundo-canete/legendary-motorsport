@@ -32,6 +32,11 @@ header {
     width: 100px;
 }
 
+.navbar-png {
+    width: 30px;
+    height: 30px;
+}
+
 .nav-link {
     background-color: #8C0510;
     color: #FFFFFF;
@@ -40,6 +45,7 @@ header {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
+    text-align: end;
 }
 
 .last-nav-link {
@@ -382,10 +388,6 @@ figure {
 
     header {
         margin: 0;
-    }
-    
-    .navbar-icons img {
-        width: 66px;
     }
 
     footer {
