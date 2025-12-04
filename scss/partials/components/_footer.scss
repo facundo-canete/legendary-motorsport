@@ -1,0 +1,74 @@
+@use '../utilities/variables';
+@use '../utilities/mixins';
+
+footer {
+    @include mixins.flex (column-reverse, center);
+    border-top: variables.$border;
+    margin: 13px 0;
+    padding-top: 15px;
+    gap: 20px;
+
+    .footer-copyright {
+        color: variables.$accent-color;
+        font-size: 90%;
+        &:hover {
+            cursor: default;
+        }
+    }
+
+    form .form-label {
+        color: variables.$text-color;
+    }
+
+    .footer-form {
+        @include mixins.flex (column, center);
+        gap: 10px;
+    }
+}
+
+// Media queries: tablet
+@media (min-width: 768px) {
+    footer {
+        padding-top: 20px;
+
+        .footer-copyright {
+            font-size: 100%;
+        }
+
+        form {
+            @include mixins.flex (null, space-between, center);
+            
+        }
+
+        .footer-form {
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    }
+}
+
+// Media queries: desktop
+@media (min-width: 992px) {
+    footer {
+        @include mixins.flex (row, space-between, center);
+        padding: 15px 0;
+        border-top: variables.$border;
+        margin-top: 13px;
+
+        .footer-copyright {
+            font-size: initial;
+        }
+
+        form {
+
+            .form-label {
+                margin-right: 8px;
+                margin-bottom: 0;
+            }
+
+            .footer-form {
+                flex-direction: row;
+            }
+        }
+    }
+}

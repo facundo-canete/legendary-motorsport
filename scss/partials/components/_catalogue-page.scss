@@ -1,0 +1,9 @@
+@use '../utilities/mixins';
+
+.catalogue article {
+    @include mixins.flex (column, null, center);
+
+    .carousel-item img {
+        border-radius: 32px;
+    }
+}

@@ -1,0 +1,16 @@
+@use '../utilities/variables';
+@use '../utilities/extend';
+
+.btn {
+    @extend %buttons;
+    padding: 0 0 0 0;
+}
+
+.nav-link {
+    @extend %nav-links;
+}
+
+.last-nav-link {
+    @extend %nav-links;
+    padding-bottom: 8px;
+}

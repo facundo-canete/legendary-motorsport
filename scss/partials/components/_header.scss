@@ -1,0 +1,42 @@
+@use '../utilities/variables';
+
+header {
+    border-bottom: variables.$border;
+    
+    .navbar-brand {
+        background-color: transparent;
+        padding: 0;
+        margin-right: 0;
+
+        img {
+            width: 100px;
+        }
+    }
+
+    .navbar-png {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+// Media query: tablet
+@media (min-width: 768px) {
+    header {
+        margin: 0;
+    }
+}
+
+// Media queries: desktop
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        
+        .navbar-nav {
+            gap: 13px;
+
+            .nav-link {
+                padding: 0 0 0 0;
+                border-radius: 0.25rem;
+            }
+        }
+    }
+}

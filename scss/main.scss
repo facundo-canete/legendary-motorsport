@@ -1,0 +1,14 @@
+// Base
+@use './partials/base/font';
+@use './partials/base/reset';
+
+// Components
+@use './partials/components/general';
+@use './partials/components/buttons';
+@use './partials/components/header';
+@use './partials/components/footer';
+@use './partials/components/home-page';
+@use './partials/components/catalogue-page';
+@use './partials/components/news-page';
+@use './partials/components/updates-page';
+@use './partials/components/auC-page';

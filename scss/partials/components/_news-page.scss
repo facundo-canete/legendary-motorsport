@@ -1,0 +1,101 @@
+@use '../utilities/variables';
+@use '../utilities/mixins';
+@use '../utilities/extend';
+
+.news-mobile {
+    @include mixins.flex (column);
+    gap: 50px;
+
+    .news-mobile-titles {
+        font-size: variables.$mobile-news-headings-size;
+        margin-bottom: 0;
+    }
+
+    .news-mobile-content {
+        border: variables.$border;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .news-mobile-dates {
+        font-size: variables.$mobile-news-headings-size;
+        text-align: right;
+        margin-bottom: 0;
+    }
+}
+
+.news-desktop {
+    display: none;
+
+    .news-desktop-headings {
+        @include mixins.flex (null, space-between);
+
+        h3 {
+            margin-bottom: 0;
+        }
+
+        .news-desktop-dates-left {
+            text-align: left;
+        }
+
+        .news-desktop-dates-right {
+            text-align: right;
+        }
+
+        .news-desktop-titles-left {
+            text-align: left;
+        }
+
+        .news-desktop-titles-right {
+            text-align: right;
+        }
+    }
+
+    .news-desktop-content-left {
+        @extend %news-desktop-content;
+        grid-template-areas:
+            "image text";
+
+        .news-desktop-text-right {
+            @include mixins.flex (null, null, center);
+            text-align: right;
+            grid-area: text;
+        }
+    }
+
+    .news-desktop-content-right {
+        @extend %news-desktop-content;
+        grid-template-areas:
+            "text image";
+        
+        .news-desktop-text-right {
+            @include mixins.flex (null, null, center);
+            text-align: left;
+            grid-area: text;
+        }
+    }
+
+    .news-desktop-pictures {
+        img {
+            width: 100%;
+            grid-area: image;
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .news-mobile {
+        display: none;
+    }
+
+    .news-desktop {
+        display: initial;
+
+        .news-desktop-text-left, .news-desktop-text-right {
+            font-size: variables.$desktop-news-text;
+        }
+    }
+}
