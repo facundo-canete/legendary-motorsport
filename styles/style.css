@@ -234,6 +234,9 @@ footer .footer-form {
 .news-mobile .news-mobile-content img {
   width: 100%;
 }
+.news-mobile .news-mobile-content .news-mobile-text {
+  text-align: justify;
+}
 .news-mobile .news-mobile-dates {
   font-size: 14px;
   text-align: right;
@@ -274,7 +277,7 @@ footer .footer-form {
 .news-desktop .news-desktop-content-right {
   grid-template-areas: "text image";
 }
-.news-desktop .news-desktop-content-right .news-desktop-text-right {
+.news-desktop .news-desktop-content-right .news-desktop-text-left {
   display: flex;
   align-items: center;
   text-align: left;

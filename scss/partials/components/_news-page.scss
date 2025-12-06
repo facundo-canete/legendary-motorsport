@@ -17,6 +17,10 @@
         img {
             width: 100%;
         }
+
+        .news-mobile-text {
+            text-align: justify;
+        }
     }
 
     .news-mobile-dates {
@@ -70,7 +74,7 @@
         grid-template-areas:
             "text image";
         
-        .news-desktop-text-right {
+        .news-desktop-text-left {
             @include mixins.flex (null, null, center);
             text-align: left;
             grid-area: text;
@@ -95,7 +99,7 @@
         display: initial;
 
         .news-desktop-text-left, .news-desktop-text-right {
-            font-size: variables.$desktop-news-text;
+            font-size: variables.$desktop-news-text-size;
         }
     }
 }
