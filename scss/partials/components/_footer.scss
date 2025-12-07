@@ -16,13 +16,16 @@ footer {
         }
     }
 
-    form .form-label {
-        color: variables.$text-color;
-    }
+    form {
+        
+        .form-label {
+            color: variables.$text-color;
+        }
 
-    .footer-form {
+        .footer-form {
         @include mixins.flex (column, center);
         gap: 10px;
+        }
     }
 }
 
@@ -38,11 +41,9 @@ footer {
         form {
             @include mixins.flex (null, space-between, center);
             
-        }
-
-        .footer-form {
-            flex-direction: column;
-            justify-content: flex-end;
+            .footer-form {
+                @include mixins.flex (column, flex-end);
+            }
         }
     }
 }

@@ -3,47 +3,47 @@
 html {
     background-color: variables.$bg-color;
     margin: 0 10px;
-}
 
-body {
-    background-color: variables.$bg-color;
-    font-family: variables.$main-font;
-}
+    body {
+        background-color: variables.$bg-color;
+        font-family: variables.$main-font;
 
-main {
-    margin: 13px 0;
-}
+        main {
+            margin: 13px 0;
 
-h1 {
-    color: variables.$text-color;
-    margin-bottom: 20px;
-    font-size: variables.$mobile-headings-size;
-}
+            h1 {
+                color: variables.$text-color;
+                margin-bottom: 20px;
+                font-size: variables.$mobile-subheadings-size;
+            }
 
-h3 {
-    color: variables.$text-color;
-    margin-bottom: 15px;
-    font-size: variables.$mobile-subheadings-size;
-}
+            h3 {
+                color: variables.$text-color;
+                margin-bottom: 15px;
+                font-size: variables.$mobile-subheadings-size;
+            }
 
-p {
-    color: variables.$text-color;
-    margin: 0;
-}
+            p {
+                color: variables.$text-color;
+                margin: 0;
+            }
 
-input[placeholder], textarea[placeholder] {
-    font-family: variables.$arial;
-}
+            input[placeholder], textarea[placeholder] {
+                font-family: variables.$arial;
+            }
 
-figure {
-    margin-bottom: 0;
-}
+            figure {
+                margin-bottom: 0;
+            }
 
-.final-text {
-    margin-top: 20px;
-    margin-bottom: 0px;
-    text-align: center;
-    font-size: variables.$mobile-final-text;
+            .final-text {
+                margin-top: 20px;
+                margin-bottom: 0;
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+    }
 }
 
 // Media query: tablet
@@ -57,21 +57,21 @@ figure {
 @media (min-width: 992px) {
     html {
         margin: 10px 10px 0;
-    }
 
-    h1 {
-        font-size: variables.$desktop-headings-size;
-    }
+        h1 {
+            font-size: variables.$desktop-headings-size;
+        }
 
-    h3 {
-        font-size: variables.$desktop-subheadings-size;
-    }
+        h3 {
+            font-size: variables.$desktop-subheadings-size;
+        }
 
-    p {
-        font-size: variables.$desktop-text-size;
-    }
+        p {
+            font-size: variables.$desktop-text-size;
+        }
 
-    .final-text {
-        font-size: variables.$desktop-final-text;
+        .final-text {
+            font-size: 1.17em;
+        }
     }
 }

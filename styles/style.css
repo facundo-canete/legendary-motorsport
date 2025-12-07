@@ -10,44 +10,36 @@ html {
   background-color: #000000;
   margin: 0 10px;
 }
-
-body {
+html body {
   background-color: #000000;
   font-family: "Nunito", sans-serif;
 }
-
-main {
+html body main {
   margin: 13px 0;
 }
-
-h1 {
+html body main h1 {
   color: #FFFFFF;
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 16px;
 }
-
-h3 {
+html body main h3 {
   color: #FFFFFF;
   margin-bottom: 15px;
   font-size: 16px;
 }
-
-p {
+html body main p {
   color: #FFFFFF;
   margin: 0;
 }
-
-input[placeholder], textarea[placeholder] {
+html body main input[placeholder], html body main textarea[placeholder] {
   font-family: Arial, sans-serif;
 }
-
-figure {
+html body main figure {
   margin-bottom: 0;
 }
-
-.final-text {
+html body main .final-text {
   margin-top: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   text-align: center;
   font-size: 14px;
 }
@@ -61,16 +53,16 @@ figure {
   html {
     margin: 10px 10px 0;
   }
-  h1 {
+  html h1 {
     font-size: 2em;
   }
-  h3 {
+  html h3 {
     font-size: 1.17em;
   }
-  p {
+  html p {
     font-size: 1em;
   }
-  .final-text {
+  html .final-text {
     font-size: 1.17em;
   }
 }
@@ -157,7 +149,7 @@ footer .footer-copyright:hover {
 footer form .form-label {
   color: #FFFFFF;
 }
-footer .footer-form {
+footer form .footer-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -176,7 +168,8 @@ footer .footer-form {
     justify-content: space-between;
     align-items: center;
   }
-  footer .footer-form {
+  footer form .footer-form {
+    display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }

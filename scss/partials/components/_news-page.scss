@@ -82,6 +82,7 @@
     }
 
     .news-desktop-pictures {
+        
         img {
             width: 100%;
             grid-area: image;
@@ -99,7 +100,7 @@
         display: initial;
 
         .news-desktop-text-left, .news-desktop-text-right {
-            font-size: variables.$desktop-news-text-size;
+            font-size: 14px;
         }
     }
 }
